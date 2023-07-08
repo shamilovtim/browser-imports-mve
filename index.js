@@ -1,7 +1,7 @@
 const testAsyncImport = () => {
   import("not-exist.js")
-    .then((ts) => alert(""))
-    .catch((es) =>
+    .then((succ) => alert(""))
+    .catch((err) =>
       alert("async import successfully tested. no unhandled exception.")
     );
 };
